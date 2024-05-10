@@ -1,0 +1,16 @@
+1)Initialize:
+Create a set to keep track of visited nodes.
+Create a dictionary to store the shortest distances from the start node to each node.
+Set the distance to the start node as 0, and infinity for all other nodes.
+Create a priority queue (min heap) and add the start node with distance 0.
+2)While the priority queue is not empty:
+Pop the node with the smallest distance from the priority queue.
+If the node is already visited, skip to the next iteration.
+Mark the node as visited.
+Update the distances to its neighbors:
+For each neighbor of the current node:
+Calculate the new distance from the start node to the neighbor through the current node.
+If the new distance is shorter than the recorded distance, update the distance.
+Add the neighbor and its new distance to the priority queue.
+3)Return the distances:
+The distances dictionary now contains the shortest distances from the start node to all other nodes in the graph.
